@@ -33,12 +33,13 @@ at /etc/apache2/ports.conf
 4. open sslvhost.skeleton.conf 
 	- change ServerAdmin to the correct Email
 	- change SSL file locations to the correct locations
-
 	
-        SSLCertificateFile     /path/to/ssl/crt
-        SSLCertificateKeyFile  /path/to/ssl/key
-        SSLCertificateChainFile /path/to/ssl/ca.pem
-        
+>    SSLCertificateFile     /path/to/ssl/crt
+
+>    SSLCertificateKeyFile  /path/to/ssl/key
+
+>    SSLCertificateChainFile /path/to/ssl/ca.pem
+    
 5. Give the script the ability to excute by doing chmod +x vhosts.sh
 
 ### Usage
