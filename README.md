@@ -40,7 +40,7 @@ at /etc/apache2/ports.conf
 
 >    SSLCertificateChainFile /path/to/ssl/ca.pem
     
-5. Give the script the ability to excute by doing chmod +x vhosts.sh
+5 . Give the script the ability to excute by doing chmod +x vhosts.sh
 
 ### Usage
 To use the script. Just run  ``` sudo vhosts.sh ``` and follow the directions
