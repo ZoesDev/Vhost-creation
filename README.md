@@ -3,20 +3,19 @@ The script is used to create vhosts on Apache web server. It is designed for use
 when the script runs, it will ask for the desired url, relative web root, and does it need SSL or not. The script uses name based SSL so you many need to change Apache config to use it. by adding
 
 
-<IfModule mod_ssl.c>
-    # If you add NameVirtualHost *:443 here, you will also have to change
-    # the VirtualHost statement in /etc/apache2/sites-available/default-ssl
-    # to <VirtualHost *:443>
-    # Server Name Indication for SSL named virtual hosts is currently not
-    # supported by MSIE on Windows XP.
-    Listen 443
-    NameVirtualHost *:443
-</IfModule>
-
-<IfModule mod_gnutls.c>
-    Listen 443
-    NameVirtualHost *:443
-</IfModule>
+    <IfModule mod_ssl.c>
+        # If you add NameVirtualHost *:443 here, you will also have to change
+        # the VirtualHost statement in /etc/apache2/sites-available/default-ssl
+        # to <VirtualHost *:443>
+        # Server Name Indication for SSL named virtual hosts is currently not
+        # supported by MSIE on Windows XP.
+        Listen 443
+        NameVirtualHost *:443
+    </IfModule>
+    <IfModule mod_gnutls.c>
+       Listen 443
+       NameVirtualHost *:443
+    </IfModule>
 
 
 at /etc/apache2/ports.conf
