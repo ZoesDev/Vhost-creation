@@ -35,7 +35,7 @@ if [ ! -d "$absolute_doc_root" ]; then
         `touch "$indexfile"`
         echo "<html><head></head><body>Welcome!</body></html>" >> "$indexfile"
         #set permissions
-        `chmod -R 775 "$absolute_doc_root/"`
+        `chmod -R 755 "$absolute_doc_root/"`
        `chown -R rob:www-data "$absolute_doc_root/"`
         echo "Created directory $absolute_doc_root/"
 fi
