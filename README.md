@@ -43,4 +43,4 @@ at /etc/apache2/ports.conf
 5 . Give the script the ability to excute by doing chmod +x vhosts.sh
 
 ### Usage
-To use the script. Just run  ``` sudo vhosts.sh ``` and follow the directions
+To use the script. Just run  ``` sudo ./vhosts.sh ``` and follow the directions
