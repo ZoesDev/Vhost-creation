@@ -36,10 +36,10 @@ at /etc/apache2/ports.conf
 	- change SSL file locations to the correct locations
 
 	
-        ```SSLCertificateFile     /path/to/ssl/crt
+        SSLCertificateFile     /path/to/ssl/crt
         SSLCertificateKeyFile  /path/to/ssl/key
         SSLCertificateChainFile /path/to/ssl/ca.pem
-        ```
+        
 5. Give the script the ability to excute by doing chmod +x vhosts.sh
 
 ### Usage
